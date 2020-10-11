@@ -11,7 +11,7 @@ export default class Sidebar extends Component {
           <aside id="colorlib-aside" className="border js-fullheight">
             <div className="text-center">
               <div className="author-img" style={{backgroundImage: 'url(images/Nikita-Ahuja.jpg)'}} />
-              <h1 id="colorlib-logo"><a href="index.html">Nikita Ahuja</a></h1>
+              <h1 id="colorlib-logo"><a href="index.html">NIKITA AHUJA</a></h1>
             </div>
             <nav id="colorlib-main-menu" role="navigation" className="navbar">
               <div id="navbar" className="collapse">
@@ -32,6 +32,11 @@ export default class Sidebar extends Component {
                 <li><a href="https://www.instagram.com/nixahuja" target="_blank" rel="noopener noreferrer"><i className="icon-instagram" /></a></li>
               </ul>
             </nav>
+            <div className="colorlib-footer">
+              <p><small>
+                Copyright © 2020
+              </small></p>
+            </div>
           </aside>
         </div>
       </div>
