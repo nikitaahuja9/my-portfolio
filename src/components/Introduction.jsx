@@ -2,17 +2,18 @@ import React, {Component} from 'react';
 
 export default class Introduction extends Component {
 
-  get show() {
-    return this.props.activeSection === "introduction";
+  constructor(props) {
+    super(props);
+    this.state = {about:false};
   }
 
   render() {
-    if (this.show) {
     return (
       <div>
         <section id="colorlib-hero" className="js-fullheight" data-section="home">
           <div className="flexslider js-fullheight">
             <ul className="slides">
+              {this.state.about == false ? 
               <li style={{backgroundImage: 'url(images/background.jpg)'}}>
                 <div className="overlay" />
                 <div className="container-fluid">
@@ -21,13 +22,12 @@ export default class Introduction extends Component {
                       <div className="slider-text-inner js-fullheight">
                         <div className="desc">
                           <h1>Hi! I'm Nikita</h1>
-                        </div>
+                        </div>  
                       </div>
                     </div>
                   </div>
                 </div>
-              </li>
-
+              </li> : null }
               
               <li style={{backgroundImage: 'url(images/background.jpg)'}}>
                 <div className="overlay" />
@@ -37,8 +37,10 @@ export default class Introduction extends Component {
                       <div className="slider-text-inner">
                         <div className="desc">
                           <h1>Who am I?</h1>   
-                          <p><a className="btn btn-primary btn-learn" data-nav-section="about" href="about"
-                          >About Me <i className="icon-user" /></a></p>
+                          
+                          <p><a className="btn btn-primary btn-learn" 
+                          data-nav-section="about" href="about"
+                          >About Me <i className="icon-user"/></a></p>
                         </div>
                       </div>
                     </div>
@@ -79,7 +81,6 @@ export default class Introduction extends Component {
           </div>
         </section>
       </div>
-    )}
-    else { return null; }
+    )
   }
 }
