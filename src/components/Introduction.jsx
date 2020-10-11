@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
 
 export default class Introduction extends Component {
+
+  get show() {
+    return this.props.activeSection === "introduction";
+  }
+
   render() {
+    if (this.show) {
     return (
       <div>
-         <nav id="colorlib-main-menu" role="navigation" className="navbar">
         <section id="colorlib-hero" className="js-fullheight" data-section="home">
           <div className="flexslider js-fullheight">
             <ul className="slides">
@@ -22,6 +27,8 @@ export default class Introduction extends Component {
                   </div>
                 </div>
               </li>
+
+              
               <li style={{backgroundImage: 'url(images/background.jpg)'}}>
                 <div className="overlay" />
                 <div className="container-fluid">
@@ -29,8 +36,8 @@ export default class Introduction extends Component {
                     <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                       <div className="slider-text-inner">
                         <div className="desc">
-                          <h1>Who am I?</h1>
-                          <p><a className="btn btn-primary btn-learn" data-nav-section="about"
+                          <h1>Who am I?</h1>   
+                          <p><a className="btn btn-primary btn-learn" data-nav-section="about" href="about"
                           >About Me <i className="icon-user" /></a></p>
                         </div>
                       </div>
@@ -71,8 +78,8 @@ export default class Introduction extends Component {
             </ul>
           </div>
         </section>
-        </nav>
       </div>
-    )
+    )}
+    else { return null; }
   }
 }

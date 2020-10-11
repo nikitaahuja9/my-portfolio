@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
 
 export default class About extends Component {
+
+  get show() {
+    return this.props.activeSection === "about";
+  }
+
   render() {
+
+    if (this.show) {
     return (
       <div>
         <section className="colorlib-about" data-section="about">
@@ -25,7 +32,11 @@ export default class About extends Component {
             </div>
         </div>
         </section>
-      </div>
-    )
+      </div> )
+    }
+    else {
+      return null;
+    }
+    
   }
 }
