@@ -15,12 +15,12 @@ export default class App extends Component {
          	
            <Sidebar></Sidebar>
 
-          {/* <div id="colorlib-main">
+          <div id="colorlib-main">
             <Introduction></Introduction>
             <About></About>
             <Projects></Projects>
             <Contact></Contact>
-          </div> */}
+          </div>
 
       	</div>
       </div>
