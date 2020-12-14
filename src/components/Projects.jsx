@@ -48,7 +48,7 @@ export default class Projects extends Component {
                                             }}>
                                             <a target="_blank">
 
-                                                <img src="/images/employee-manager.png" alt="asp" height="200" />
+                                                <img src="https://www.flaticon.com/svg/static/icons/svg/1481/1481477.svg" alt="asp" height="200" />
                                                 <br />
                                                 <a target="_blank"> <img src="https://img.shields.io/badge/-ASP.NET Core-green" alt="asp" height="25" /> </a>
                                                 <a target="_blank"> <img src="https://img.shields.io/badge/-C Sharp-green" alt="csharp" height="25" /> </a>
@@ -91,7 +91,7 @@ export default class Projects extends Component {
                                             }}>
                                             <a target="_blank">
 
-                                                <img src="/images/puddle.png" alt="asp" height="200" />
+                                                <img src="https://www.flaticon.com/svg/static/icons/svg/2097/2097276.svg" alt="asp" height="200" />
                                                 <br />
                                                 <a target="_blank"> <img src="https://img.shields.io/badge/-Java-green" alt="java" height="25" /> </a>
                                                 <a target="_blank"> <img src="https://img.shields.io/badge/-JavaScript-green" alt="js" height="25" /> </a>
@@ -136,7 +136,7 @@ export default class Projects extends Component {
                                             }}>
                                             <a target="_blank">
 
-                                                <img src="/images/news.png" alt="asp" height="200" />
+                                                <img src="https://www.flaticon.com/svg/static/icons/svg/2983/2983803.svg" alt="asp" height="200" />
                                                 <br />
                                                 <a target="_blank"> <img src="https://img.shields.io/badge/-React.js-green" alt="react" height="25" /> </a>
                                                 <a target="_blank"> <img src="https://img.shields.io/badge/-Node.js-green" alt="node" height="25" /> </a>
