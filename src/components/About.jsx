@@ -18,7 +18,7 @@ export default class About extends Component {
                      I'm a CS Undergraduate from BITS Pilani Dubai with almost a year of work experience, always seeking new opportunities to devise innovative software solutions that positively impact people’s lives.
                      A motivated and passionate individual with the necessary drive to make a mark in the big picture!</p>
 
-                      <p>Always exploring new paradigms in software development, I'm very enthusiastic about experimenting with the latest web and mobile development technologies to build efficient and scalable applications. </p>
+                      <p>I'm very enthusiastic about experimenting with the latest web and mobile development technologies to build efficient and scalable applications. </p>
 
                       <p>Languages I use: </p>
 
