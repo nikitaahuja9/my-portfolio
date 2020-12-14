@@ -1,6 +1,20 @@
 import React, { Component } from 'react';
 
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+
 export default class Projects extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { hover: false };
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.setState({ hover: true });
+    }
+
     render() {
         return (
             <div>
@@ -20,14 +34,87 @@ export default class Projects extends Component {
                                         <i className="icon-bulb" />
                                     </span>
                                     <div className="desc">
-                                        <h3>INews</h3>
-                                        <p>A Web Application developed using the React.js Framework and structured using the MVC design pattern, that allows users to browse the latest news posted by Indian News channels sorted by category.
-                                            <br />
-                                            Technologies: React, Node, JavaScript, HTML, CSS, SASS, Axios (HTTP client), Context API, News API
-                                        </p>
+                                        <h3>EMS</h3>
+
+                                        <Popup trigger={<button
+                                            style={{
+                                                background: 'none',
+                                                color: 'inherit',
+                                                border: 'none',
+                                                padding: 0,
+                                                font: 'inherit',
+                                                cursor: 'pointer',
+                                                outline: 'inherit'
+                                            }}>
+                                            <a target="_blank">
+
+                                                <img src="/images/employee-manager.png" alt="asp" height="200" />
+                                                <br />
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-ASP.NET Core-green" alt="asp" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-C Sharp-green" alt="csharp" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-HTML-green" alt="html" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-CSS-green" alt="css" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-jQuery-green" alt="jquery" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Entity Framework Core-green" alt="efc" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-SQL Server-green" alt="sql" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-JSON-green" alt="json" height="25" /> </a>
+
+                                            </a>
+
+                                        </button>} position="center">
+
+                                            <p style={{ color: 'grey' }}>
+                                                • An Employee Management System developed for consolidating and managing employee data.
+                                            </p>
+                                        </Popup>
                                     </div>
                                 </div>
 
+                            </div>
+
+                            <div className="col-md-4 text-center animate-box">
+                                <div className="services color-5">
+                                    <span className="icon">
+                                        <i className="icon-phone3" />
+                                    </span>
+                                    <div className="desc">
+                                        <h3>Puddle</h3>
+                                        <Popup trigger={<button
+                                            style={{
+                                                background: 'none',
+                                                color: 'inherit',
+                                                border: 'none',
+                                                padding: 0,
+                                                font: 'inherit',
+                                                cursor: 'pointer',
+                                                outline: 'inherit'
+                                            }}>
+                                            <a target="_blank">
+
+                                                <img src="/images/puddle.png" alt="asp" height="200" />
+                                                <br />
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Java-green" alt="java" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-JavaScript-green" alt="js" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Swift-green" alt="swift" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-TypeScript-green" alt="typescript" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Google Maps-green" alt="googlemaps" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Firebase-green" alt="firebase" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Xcode-green" alt="xcode" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Android Studio-green" alt="androidstudio" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-MongoDB-green" alt="mongodb" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Git-green" alt="git" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-DevOps-green" alt="devops" height="25" /> </a>
+
+                                            </a>
+
+                                        </button>} position="center">
+
+                                            <p style={{ color: 'grey' }}> • Chat application for having discussions in groups called ’puddles’ to simplify teamwork. Designed for iOS and Android platforms.
+                                            </p>
+                                            <p></p>
+                                        </Popup>
+                                    </div>
+                                </div>
                             </div>
 
                             <div className="col-md-4 text-center animate-box">
@@ -36,37 +123,45 @@ export default class Projects extends Component {
                                         <i className="icon-data" />
                                     </span>
                                     <div className="desc">
-                                        <h3>CVtracker</h3>
-                                        <p>A COVID 19 Tracker Web Application developed using the React.js Framework that makes use of the latest Worldometer Statistics to display the relevant COVID stats for affected countries across the world.
-                                        <br />
-                                            Technologies: React, Node, JavaScript, HTML, CSS, SASS, Axios (HTTP client), Worldometer stats API
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4 text-center animate-box">
-                                <div className="services color-5">
-                                    <span className="icon">
-                                        <i className="icon-phone3" />
-                                    </span>
-                                    <div className="desc">
-                                        <h3>Project 3</h3>
-                                        <p>Description</p>
+                                        <h3>INews</h3>
+                                        <Popup trigger={<button
+                                            style={{
+                                                background: 'none',
+                                                color: 'inherit',
+                                                border: 'none',
+                                                padding: 0,
+                                                font: 'inherit',
+                                                cursor: 'pointer',
+                                                outline: 'inherit'
+                                            }}>
+                                            <a target="_blank">
+
+                                                <img src="/images/news.png" alt="asp" height="200" />
+                                                <br />
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-React.js-green" alt="react" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Node.js-green" alt="node" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-JavaScript-green" alt="js" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-JSX-green" alt="jsx" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Context API-green" alt="contextapi" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Bootstrap-green" alt="bootstrap" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-Axios-green" alt="axios" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-News API-green" alt="newsapi" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-HTML-green" alt="html" height="25" /> </a>
+                                                <a target="_blank"> <img src="https://img.shields.io/badge/-SASS-green" alt="sass" height="25" /> </a>
+                                            </a>
+
+                                        </button>} position="center">
+
+                                            <p style={{ color: 'grey' }}> • Built for users to stay in sync with the latest news from news channels world over.
+                                            </p>
+                                            <p></p>
+
+
+                                        </Popup>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="col-md-4 text-center animate-box">
-                                <div className="services color-2">
-                                    <span className="icon">
-                                        <i className="icon-data" />
-                                    </span>
-                                    <div className="desc">
-                                        <h3>Project 4</h3>
-                                        <p>Description</p>
-                                    </div>
-                                </div>
-                            </div>
                             <div className="col-md-4 text-center animate-box">
                                 <div className="services color-4">
                                     <span className="icon">
@@ -74,10 +169,14 @@ export default class Projects extends Component {
                                     </span>
                                     <div className="desc">
                                         <h3>This website</h3>
-                                        <p>It's my portfolio.
-                                            <br />
-                                           Technologies: take a guess?
+                                        <p>It's under construction. Stay tuned for more.
                                         </p>
+                                        <a target="_blank"> <img src="https://img.shields.io/badge/-React.js-green" alt="react" height="25" /> </a>
+                                        <a target="_blank"> <img src="https://img.shields.io/badge/-Node.js-green" alt="node" height="25" /> </a>
+                                        <a target="_blank"> <img src="https://img.shields.io/badge/-JavaScript-green" alt="js" height="25" /> </a>
+                                        <a target="_blank"> <img src="https://img.shields.io/badge/-JSX-green" alt="jsx" height="25" /> </a>
+                                        <a target="_blank"> <img src="https://img.shields.io/badge/-HTML-green" alt="html" height="25" /> </a>
+                                        <a target="_blank"> <img src="https://img.shields.io/badge/-SASS-green" alt="sass" height="25" /> </a>
                                     </div>
                                 </div>
                             </div>
